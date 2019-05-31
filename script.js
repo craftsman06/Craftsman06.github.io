@@ -1,3 +1,3 @@
 function runcode() {
-    alert("coolness here");
+    alert("Are you sure");
 }

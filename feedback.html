@@ -1,62 +1,95 @@
 <!DOCTYPE html>
+<style>
+  header{
+    text-align: center;
+    font-size: 30px;
+    color:black;
+    
+  }
+  
+  body {
+    margin:0;
+    background: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+  }
+
+ 
+
+p {
+  font-size:16px;
+  font-family: monospace;
+  
+  color:black;
+}
+button {
+
+}
+footer {
+  font-size: 16px;
+border: 1px dotted #000000;
+}
+div {
+  background-color: lightgrey;
+  width: 860px;
+  height: 1400px;
+  border: 5px solid #777777;
+  padding: 40px;
+  margin: 40px;
+}
+nav {
+ float: none;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+}
+nav a {
+  color:#444;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+nav a:hover {
+  color:#000;
+}
+
+
+</style>
 <html>
-    <head>
-        <title>CraftTime!</title>
-<link rel="stylesheet" href="css/feedback.css"/>
-    </head>
-         <body>
-<div class="header">
-    <h1>CraftTime</h1>
-</div>
-<div class="nav_bar">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="feedback.html">FeedBack</a>
-        <a href="contact.html">Contact</a>
-</div>
-<div class="main_container">
-    <center>
-    <h2>How Was You Visit?</h2>
-    <div>
-    <label for="Good">Good!</label>
-    <input type="radio" name="Good" id="Good"/>
-</div>
-<div>
-    <label for="Great">Great!</label>
-<input type="radio" name="Great" id="Great"/>
-</div>
-<div>
-    <label for="Awsome Sause">Awsome Sause!</label>
-    <input type="radio" name="Awsome Sause" id="Awsome Sause"/>
-</div>
-<div>
-    <label for="Epic">Epic!</label>
-    <input type="radio" name="Epic" id="Epic"/>
-</div>
+  <head><title>CraftsMans Youtube Page</title></head>
+  <center>
+      <A STYLE="text-decoration:none" href="index.html"><header>Craftsman06.Github.io</header></a>
+  <nav>
+      <ul>
+        
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        
+      </ul>
+    </nav>
     </center>
-    <center>
-    <h2>What Is Your Favorite Food?</h2>
-    <div>
-        <label for="Pizza">Pizza</label>
-        <input type="radio" name="Pizza" id="Pizza"/>
-    </div>
-    <div>
-        <label for="Cake">Cake</label>
-    <input type="radio" name="Cake" id="Cake"/>
-    </div>
-    <div>
-        <label for="Other">Other</label>
-<input type="text" name="Other" placeholder="Other Food" id="Other"/>
-    </div>
-    <div>
-            <a href="index.html"><button type="submit">Submit</button></a>
-    </div>
-
-    </center>
-</div>
-<div class="footer">
-    &copy;2019 Craftman06S CraftTime!.
-</div>
-
-         </body>
-    </html>
+    <body>
+        <center>
+            <div>
+                <label for="Favorite Food">Favorite Food</label>
+                <input type="text" name="Favorite Food" id="Favorite Food" placeholder="Pizza"/>
+                <h1></h1>
+                <label for="Favorite Drink">Favorite Drink</label>
+                <input type="text" name="Drink" id="Drink" placeholder="Pepsi"/>
+                <h1></h1>
+                <label for="Color">Color</label>
+                <input type="color" name="color" id="color" placeholder="Red"/>
+                <h1></h1>
+                <a href="home.html"><button>Submit</button></a>
+            </div>
+        </center>
+    </body>

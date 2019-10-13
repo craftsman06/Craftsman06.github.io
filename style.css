@@ -1,3 +1,7 @@
+a {
+    text-decoration: none;
+    color:Black;
+}
 header {
     font-size:3rem;
     font-family: fantasy;
@@ -28,7 +32,10 @@ h3 {
     background: aqua;
 }
 .rainbow-text {
-    background-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+    background-image: linear-gradient(to right,  Brown,pink,blue,orange,black);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+video {
+    width:45rem;
+}

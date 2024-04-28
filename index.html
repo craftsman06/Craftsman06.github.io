@@ -1,73 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
-  <title>Survey Form</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-<head>
-  <h1 id="title">Crafts Survery Form</h1>
-  <p id="description">Please fill in everything honestly.</p>
-</head>
-<body>
-  <form id="survey-form">
+<html lang=""en>
+    <title>OakParkBusRequest</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+    <head>
+        <header name="oakparkpentecostals" class="oakparkpentecostals">
+            <img src="Oakparklogoblack.png" class="logo">
+            <h2 id="bus" class="bus">Bus Request</h2>
+        </header>
 
-    <fieldset>
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "pfoRNWtdXZ2nFKWhI",
+      });
+   })();
+</script>
+<script src="script.js"></script>
 
-      <label for="name" id="name-label">Name: 
-        <input id="name" type="name" placeholder="John Doe" value="johndoe" required></input>
+    </head>
 
-   
+    <body>
+        <form id="signup-form">
+            <fieldset>
+                <label for="name" id="name">Name:
+                    <input id="name" type="text" placeholder="Your Name"  required>
+            
+                </label>
 
-      </label>
-    
-    </fieldset>
+                <label for="email" id="email">Email:
+                    <input id="email" type="email"  placeholder="youremail@gmail.com" required>
+                </label>
 
-    <fieldset>
-
-      <label for="email" id="email-label">Email: 
-        <input id="email" type="email" placeholder="JohnDoe@gmail.com" value="johndoe@gmail.com" required></input>
-      </label>
-
-    </fieldset>
-    <fieldset>
-      <label for="age" id="age-label">Age: 
-        <input id="age" type="age" min="1" max="100" placeholder="1-100" value="1-100" required></input>
-      </label>
-      </fieldset>
-  <fieldset>
-      <label id="favorite-drink">Favorite Drink</label>
-        <select id="dropdown">
-          <option id="water" value="water">Water</option>
-          <option id="soda" value="soda">Soda</option>
-          <option id="coffee" value="coffee">Coffee</option>
-
-  </fieldset>
-      
-        </select>
-  <fieldset>
-      <label id="game-console">Game Console</label>
-        <input id="pc" name="console" type="radio" value="pc">PC</input>
-        <input id="ps5" name="console" type="radio" value="ps5">PS5</input>
-        <input id="xbox" name="console" type="radio" value="xbox">Xbox</input>
-
-  </fieldset>
-
-  <fieldset>
-      <label id="food">Pick foods you like.</label>
-        <input id="fruit" type="checkbox" value="fruit">Fruit</input>
-        <input id="dessert" type="checkbox" value="dessert">Dessert</input>
-  </fieldset>
-
-      <label id="comments">Leave comments.</label>
-        <textarea id="comments" row="15" cols="30"></textarea>
-
-      <label id="submit-answers">Submit Answers</label>
-        <input id="submit" type="submit"></input>
+                <label for="age" id="age">Age:
+                    <input id="age" type="number" value="age" required>
+                </label>
 
 
-    </form>
-</body>
+            </fieldset>
+            <fieldset>
+                <label for="address" id="address">Street Address:
+                    <input id="address" type="text"  placeholder="123 N St " required>
+                </label>
+                <label for="apt" id="apt">Apartment #:
+                    <input id="apt" type="text"  placeholder="Apt 1A">
+                </label>
+                <label for="phone" id="phone">Phonenumber:
+                    <input id="phone" type="text" placeholder="(012) 345 - 6789 " maxlength="10" minlength="10" required>
+                </label>
+            </fieldset>
+            <fieldset>
+                <label for="days" id="days">What day do you need a ride?
+                    <input id="days" type="checkbox" value="sunday">Sunday</input>
+                    <input id="days" type="checkbox" value="=wednesday">Wednesday</input>
+                </label>
+            </fieldset>
 
-        <footer id="footer">© Copyright Crafts 2024</footer>
+                <input id="button" type="submit" value="Request Ride" onclick="sendMail()">
+        </form>
 
+
+
+    </body>
+
+
+
+<footer>© Copyright OakParkPentecostals 2024</footer>
 </html>

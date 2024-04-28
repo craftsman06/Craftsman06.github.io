@@ -1,44 +1,22 @@
-h1, p {
-  margin: 1em auto;
-  text-align: center;
-}
-h1 {
-  font-size: 45px;
-  font-family: impact, sans serif;
-}
-p {
-  font-size: 20px;
-  font-family: sans serif;
-}
-body {
-  padding: auto;
-  border: 5px;
-  border-color: grey;
-  text-align: center;
-  width: 100%;
-  height: 100vh;
-  margin: 0;
-  background-color: skyblue;
-}
-
-form {
-  width: 60vw;
-  max-width: 500px;
-  min-width: 300px;
-  margin: 0 auto;
-  padding-bottom: 2em;
-}
-label {
-  display: block;
-  margin: 0.5rem 0;
+* {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 fieldset {
-  border: none;
-  padding: 2rem 0;
-  border-bottom: 3px solid #3b3b4f;
+    border-radius: 55px;
+    border: 0.1em solid black;
+    padding: 35px;
+    margin: 1%;
+    width: 150px 250px;
+    height: 50px 100px;
 }
-footer {
-  text-align: center;
-  margin: 1rem;
-  padding-bottom: -30px;
+body {
+    border: 3px solid black;
+    padding: 10%;
+    background-color: rgba(124, 190, 157, 0.658);
+}
+form {
+    padding-bottom: 2em;
+    padding-left: 15em;
+    padding-right: 15em; 
 }
